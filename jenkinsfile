@@ -4,7 +4,7 @@ pipeline {
         stage("Rename name of builds"){
             steps{
                 script{
-                    currentBuild.displayName = "Попытка №${currentBuild.id}"
+                    currentBuild.displayName = "билд №${currentBuild.id}"
                 }
             }
         }
